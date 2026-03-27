@@ -1,0 +1,20 @@
+workspace_dir: ./msr-workspace
+llm:
+  base_url: ${LLM_BASE_URL}
+  api_key: ${LLM_API_KEY}
+  model: ${LLM_MODEL}
+collection:
+  timeout_minutes: 30
+  max_retries: 2
+sample:
+  size: 1000
+sources:
+  github:
+    api_key: ${GITHUB_TOKEN}
+  stackoverflow:
+    api_key: ${SO_API_KEY}
+  gitlab:
+    api_key: ${GITLAB_TOKEN}
+  jira:
+    base_url: ${JIRA_URL}
+    api_key: ${JIRA_TOKEN}
